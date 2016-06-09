@@ -147,7 +147,7 @@
 			console.log("inside logout");
 			$location.url('/');
 		};
-		/*
+		
 		$scope.Delete = function(value) {
 			$scope.value = value;
 			console.log("delete function");
@@ -165,7 +165,7 @@
 			
 			
 		};
-		*/
+		
 		$scope.Submit = function(value) {
 			$scope.comment = value;
 			console.log("inside Submit : ID"+ $scope.id);
