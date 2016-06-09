@@ -75,8 +75,9 @@ Blogdao dao = new Blogdao();
 	@Secured
 	@Path("delete")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public boolean deleteUser(@QueryParam("id") Integer id) {
-		System.out.println("Deleting user: " + id);
+	public boolean deleteUser(@QueryParam("id") String id) {
+		System.out.println("Deleting title: " + id);
+		
 
 		return true;
 	}
@@ -85,7 +86,7 @@ Blogdao dao = new Blogdao();
 	@Secured
 	@Path("comment/delete")
 	@Produces({ MediaType.APPLICATION_JSON })
-	public boolean deletecomment(@QueryParam("id") Integer id) {
+	public boolean deletecomment(@QueryParam("id") String id) {
 		System.out.println("Deleting comment: " + id);
 
 		return true;
