@@ -151,7 +151,7 @@
 		$scope.Delete = function(value) {
 			$scope.value = value;
 			console.log("delete function");
-			
+			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
 			var formGet = $http.delete('blog/page/comment/delete?id='+ 4)
 			   .then(
 				       function(response){
@@ -226,6 +226,7 @@
 			$scope.value = value;
 			console.log("delete function");
 			console.log($scope.value.id);
+			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
 			var formGet = $http.delete('blog/page/delete?id='+ 4)
 			   .then(
 				       function(response){
