@@ -42,6 +42,7 @@ table, th, td {
 				<br />
 				<h1
 					style="color: #FFF; width: 360px; margin-left: 20px; font-family: Segoe UI Light; font-weight: 100;">Register</h1>
+				<div id="loginError" ng-show="Regerror">User Already Exists</div>
 				<div id="info">Please enter the below details</div>
 				<input type="text" id="username-text" placeholder="Username" ng-model="login.name"/> <input
 					type="text" id="signup-text" placeholder="email" ng-model="login.emailId" /> <input
