@@ -40,9 +40,8 @@
 				<p class="commentClass" id="commentDescription">{{c.content}}</p>
 				<div id="new" class="new">
 			<ul>
-				<li class="deleteTitle" ng-click="Delete(c)">Delete</li>
-				<li class="postDate">26/4/2015</li>
-				<li class="postDateA">author</li>
+				<li class="postDate">{{c.commentDate}}</li>
+				<li class="postDateA">{{c.authorEmail}}</li>
 			</ul>
 		</div>
 				<p class="dotted"></p>

@@ -25,20 +25,27 @@ public class Posts {
 	@Id
 	private ObjectId id;
 	private String postTitle="";
-	private Date  postDate;
+	private String  postDate;
 	private String postAbout="";
 	private String postTags="";
 	private List<Comments> comment;
 	private String postEmail="";
+	private Integer count;
 	
 //	private int userId;
 
+	public Integer getCount() {
+		return count;
+	}
+	public void setCount(Integer count) {
+		this.count = count;
+	}
 	public Posts(){}
 	   public Posts(String postTitle, String postAbout, String tags) {
 		   this.postTitle = postTitle;
 		   this.postAbout = postAbout;
 		   this.postTags = tags;
-		   this.postDate = new Date();
+		   this.postDate = new Date().toString();
 		   this.comment = new ArrayList<Comments>();
 	   }
 	   
@@ -69,11 +76,11 @@ public class Posts {
 		this.postTags = postTags;
 	}
 	
-	public Date getPostDate() {
+	public String getPostDate() {
 		return postDate;
 	}
-	public void setPostDate(Date postDate) {
-		 this.postDate = postDate;
+	public void setPostDate(String postDate) {
+		 this.postDate = new Date().toString();
 	}
 	
 	public List<Comments> getComment() {

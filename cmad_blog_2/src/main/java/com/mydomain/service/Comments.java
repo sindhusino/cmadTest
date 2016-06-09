@@ -5,21 +5,22 @@ import java.util.Date;
 public class Comments {
 	private String authorName="";
 	private String authorEmail="";
-	private int commentId;
+	private Date commentId;
 	private String content="";
-	private Date commentDate;
+	private String commentDate;
 
 	public Comments(){}
 	public Comments(String content , String name, String email) {
 		   this.authorEmail = email;
 		   this.authorName = name;
 		   this.content = content;
-		   this.commentDate = new Date();
+		   this.commentDate = new Date().toString();
+		   this.commentId = new Date();
    }
-	public void setCommentId( int id ) {
-		      this.commentId = id;
+	public void setCommentId( String id ) {
+		      this.commentId = new Date();
 	}
-	public int getCommentId() {
+	public Date getCommentId() {
 		return commentId;
 	}
 
@@ -43,11 +44,11 @@ public class Comments {
 		this.authorName = name;
 	}
 	
-	public Date getCommentDate() {
+	public String getCommentDate() {
 		return commentDate;
 	}
-	public void setCommentDate(Date commentDate) {
-		 this.commentDate = commentDate;
+	public void setCommentDate(String commentDate) {
+		 this.commentDate = new Date().toString();
 	}
 	
 	@Override

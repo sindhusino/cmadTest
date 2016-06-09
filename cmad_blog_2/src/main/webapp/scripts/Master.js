@@ -124,8 +124,15 @@
 				$scope.User).success(function(data) {
 					$scope.loginDisplay = false;
 			console.log(data);
+			console.log(data.comment);
 			$scope.data = data;
 			$scope.comment = $scope.data.comment;
+			
+		}).error (function(data, status, headers, config){
+			console.log(status);
+			if(status==401) {
+				$location.url('/');
+			} 
 			
 		});
 		
@@ -152,7 +159,7 @@
 			$scope.value = value;
 			console.log("delete function");
 			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
-			var formGet = $http.delete('blog/page/comment/delete?id='+ 4)
+			var formGet = $http.delete('blog/page/comment/delete?id='+ $scope.value.commentDate)
 			   .then(
 				       function(response){
 				         console.log("success");
@@ -170,6 +177,8 @@
 			$scope.comment = value;
 			console.log("inside Submit : ID"+ $scope.id);
 			console.log($scope.comment);
+			
+			$scope.comment.authorName = $scope.token.tokenValue;
 			console.log($scope.comment.content);
 			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
 			$http.post('blog/page/comment/'+$scope.id, $scope.comment).success(
@@ -201,6 +210,12 @@
 			$scope.titles = data;
 			$scope.titles.push($scope.titles);
 			$scope.loginDisplay = false;
+		}).error (function(data, status, headers, config){
+			console.log(status);
+			if(status==401) {
+				$location.url('/');
+			} 
+			
 		});
 		
 		$scope.About = function() {
@@ -320,6 +335,7 @@
 			$scope.data = value;
 			$scope.token = sharedToken.gettoken();
 			console.log($scope.token.tokenValue);
+			$scope.data.postTags = $scope.token.tokenValue;
 			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
 			$http.post("blog/page/blogpage", $scope.data).success(
 					function(data, status, headers, config) {
