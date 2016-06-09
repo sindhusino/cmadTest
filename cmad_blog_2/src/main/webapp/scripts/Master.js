@@ -57,6 +57,7 @@
 		$scope.Users = {};
 		$scope.loginDisplay = true;
 		$scope.loginerror= false;
+		$scope.Regerror= false;
 		
 		$scope.Login = function(value) {
 			$scope.user = value;
@@ -93,6 +94,12 @@
 				console.log(data);
 				$scope.form = false;
 				$location.url('/');
+					}).error (function(data, status, headers, config){
+				console.log(status);
+				if(status==409) {
+					$scope.Regerror= true;
+				} 
+				
 			});
 		};
 
