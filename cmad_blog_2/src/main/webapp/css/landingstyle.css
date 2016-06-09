@@ -1,0 +1,519 @@
+/*
+CSS Credit: http://www.templatemo.com/
+*/
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background: #604a40;
+}
+
+a:link, a:visited {
+	color: #cc0000;
+	text-decoration: none;
+}
+
+a:active, a:hover {
+	color: #fb5b18;
+}
+
+h1 {
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #990000;
+	height: 20px;
+	background: url(images/h1_background.png) left center no-repeat;
+}
+
+h2 {
+	margin: 0px 0px 8px 0px;
+	padding: 10px 0px 0px 15px;
+	font-size: 14px;
+	color: #000000;
+}
+
+p {
+	margin: 10px 0px;
+	color: #5b5847;
+	text-align: justify;
+}
+
+img {
+	margin: 2px 20px 2px 0px;
+	float: left;
+	border: 1px solid #333333;
+}
+
+#container_wrapper1 {
+	background: url(images/background.gif) top center repeat-x;
+}
+
+#container_wrapper2 {
+	background: url(images/mainbackground.jpg) top center no-repeat;
+}
+
+#container {
+	margin: 0% auto;
+	width: 900px;
+}
+
+/* ----- Header ----- */
+#header {
+	clear: both;
+	padding: 30px 0px 0px 30px;
+	width: 870px;
+	height: 140px;
+}
+
+#logo {
+	height: 134px;
+	background: url(images/logo.gif) no-repeat;
+}
+
+#site_title {
+	padding: 60px 0px 10px 30px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #ff0000;
+}
+
+#site_slogan {
+	padding: 90px 0px 10px 160px;
+	font-size: 12px;
+	color: #999999;
+}
+/* ----- End of Header ----- */
+
+/* ------------- Menu ------------------ */
+#menu {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	width: 900px;
+	height: 42px;
+	text-align: right;
+	background: url(images/menu_bg.png) no-repeat;
+}
+
+#menu ul {
+	margin: 0%;
+	padding: 18px 20px 0px 0px;
+	list-style: none;
+}
+
+#menu ul li {
+	margin: 0%;
+	display: inline;
+}
+
+#menu ul li a {
+	margin: 0%;
+	padding: 0px 20px 0px 0px;
+	font: 14px arial;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+}
+
+#menu ul li a:hover, #menu ul li .current {
+	color: #cccccc;
+}
+
+
+#section {
+	clear: both;
+	margin: 0px;
+	padding: 10px;
+	width: 1900px;
+	height: 42px;
+	text-align: left;
+} 
+
+#section ul {
+	margin: 0%;
+	padding: 18px 80px 0px 0px;
+	list-style: none;
+	float: inherit;
+}
+
+#section ul li {
+	margin: 0%;
+	display: inline;
+}
+/* ---------- End of Menu ------------- */
+
+/* ----------------- Content ----------------------- */
+#content {
+	float: left;
+	margin: 0%;
+	width: 900px;
+	background: #c3b595 url(images/content_bg.jpg) no-repeat;
+}
+
+#left_column {
+	float: left;
+	margin: 40px 0px 0px 40px;
+	padding: 0px;
+	width: 570px;
+}
+
+/* IE6 Only */
+* html #left_column {
+	float: left;
+	margin: 40px 20px 0px 20px;
+	padding: 0px;
+	width: 570px;
+}
+
+#right_column {
+	float: right;
+	margin: 40px 40px 0px 0px;
+	padding: 0px;
+	width: 200px;
+}
+
+* html #right_column {
+	float: right;
+	margin: 40px 20px 0px 20px;
+	padding: 0px;
+	width: 200px;
+}
+
+/* IE6 Only */
+#bottom {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	width: 900px;
+	height: 90px;
+	background: url(images/content_bg_bottom.png) no-repeat;
+}
+
+#title {
+	margin: 0px;
+	outline: 1;
+	width: 800px;
+	padding: 10px;
+	font-family: Georgia, serif;
+	color: #000000;
+	text-align: left;
+	margin-left: 1px;
+}
+
+#description {
+	margin: 0px;
+	outline: 1;
+	width: 800px;
+	height: 250px;
+	padding: 10px;
+	font-family: Georgia, serif;
+	color: #000000;
+	text-align: left;
+	margin-left: 1px;
+}
+
+#titletag, #descriptiontag {
+	width: 90px;
+	font-family: Georgia, serif;
+	color: #ffffff;
+	margin-left: 0px;
+}
+
+#Submit-button {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: #c3b595;
+	color: #FFF;
+	border-radius: 5px;
+	font-family: Georgia, serif;
+	margin: 20px;
+	-webkit-transition: background 0.3s;
+}
+
+/* ----------------- End of Content ------------------- */
+
+/* ------------- Section ------------------ */
+.section {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	color: #3e3939;
+}
+
+.section .section1_top {
+	height: 40px;
+	background: url(images/section1_top.png) no-repeat;
+}
+
+.section .section1_middle {
+	background: url(images/section1_middle.png) repeat-y;
+}
+
+.section .section1_bottom {
+	height: 37px;
+	background: url(images/section1_bottom.png) no-repeat;
+}
+
+.section .section2_top {
+	height: 40px;
+	background: url(images/section2_top.png) no-repeat;
+}
+
+.section .section2_middle {
+	background: url(images/section2_middle.png) repeat-y;
+}
+
+.section .section2_bottom {
+	height: 37px;
+	background: url(images/section2_bottom.png) no-repeat;
+}
+
+.section .section3_top {
+	height: 40px;
+	background: url(images/section3_top.png) no-repeat;
+}
+
+.section .section3_middle {
+	background: url(images/section3_middle.png) repeat-y;
+}
+
+.section .section3_bottom {
+	height: 37px;
+	background: url(images/section3_bottom.png) no-repeat;
+}
+
+.section ul {
+	margin: 0px 0px 0px 15px;
+	padding: 0px;
+	list-style: none;
+}
+
+.section ul li {
+	display: block;
+	float: left;
+}
+
+.section ul li a {
+	padding: 0px;
+	margin: 0px;
+	color: #3e3939;
+	text-decoration: none;
+}
+
+.section ul li a:hover {
+	color: #990000;
+}
+
+/* ---------- End of Section ------------ */
+
+/* ----- Post ------ */
+.postbody {
+	padding: 1px;
+	margin-bottom: 80px;
+	border-bottom: 1px dotted #333333;
+	
+}
+
+.publish_info {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	color: #3e3939;
+}
+
+.comment {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	padding-left: 9em;
+	font-size: 11px;
+	font-weight: bold;
+	background: left center no-repeat;
+	/* border: 2px dotted #ff0000; border-style: none none dotted;  */
+}
+
+.postDate {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	padding-right: 12em;
+	font-size: 11px;
+	font-weight: bold;
+	background: left center no-repeat;
+	/* border: 2px dotted #ff0000; border-style: none none dotted; */ 
+}
+
+.deleteTitle {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	padding-right: 8em;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+	background: left center no-repeat;
+	color: #804000;
+	/* border: 2px dotted #ff0000; border-style: none none dotted; */ 
+}
+
+.postDateA {
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 570px;
+	text-align: right;
+	padding: 5px 0px 5px 0px;
+	padding-right: 8em;
+	padding-right: 4em;
+	font-size: 11px;
+	font-weight: bold;
+	background: left center no-repeat;
+	/* border: 2px dotted #ff0000; border-style: none none dotted; */ 
+}
+.comment a {
+	padding: 5px 0px 5px 0px;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 4em;
+	background: left center no-repeat;
+}
+/* ----- End of Post ------ */
+
+/* ----- Form ----- */
+form {
+	width: 590px;
+	margin: 50px;
+	padding: 13px 0px 0px 10px;
+	height: 50px;
+	/*  background: url(images/search_box.gif) no-repeat;*/
+}
+
+input {
+	background: none;
+	color: #ffffff;
+	border: none;
+}
+
+.button {
+	margin: 2px 0px 0px 8px;
+	height: 32px;
+	width: 1400px;
+	color: #00ff80;
+	font-size: 15px;
+	font-weight: bold;
+	border: 10;
+	border-width: 3px;
+	background: #ffffff;
+}
+/* ----- End of Form ----- */
+
+/* ----- Footer ----- */
+#footer {
+	clear: both;
+	padding: 10px 0px 0px 15px;
+	width: 870px;
+	height: 60px;
+	text-align: center;
+	color: #999999;
+	text-align: center;
+}
+
+#footer a {
+	color: #999999;
+}
+
+#footer a:hover {
+	color: #ffffff;
+}
+
+/* ----- End of Footer ----- */
+
+/* ----- CSS styles for standard search box with placeholder text ----- */
+/* <style type="text/css"> */
+#tfnewsearch {
+	margin: auto;
+	position: relative;
+	width: 200px;
+	border: 2px solid #000000;
+}
+
+.tftextinput2 {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	border: 2px solid #0076a3;
+}
+
+.tfbutton2 {
+	margin: 0;
+	padding: 5px 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 2px #0076a3;
+	border-right: 0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee),
+		to(#0078a5));
+	background: -moz-linear-gradient(top, #00adee, #0078a5);
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+}
+
+.tfbutton2:hover {
+	text-decoration: none;
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc),
+		to(#00678e));
+	background: -moz-linear-gradient(top, #0095cc, #00678e);
+}
+/* Fixes submit button height problem in Firefox */
+.tfbutton2::-moz-focus-inner {
+	border: 0;
+}
+
+.tfclear {
+	clear: both;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+/* </style> */

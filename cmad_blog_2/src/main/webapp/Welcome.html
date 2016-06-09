@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/landingstyle.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 7]><style type="text/css">div { behavior: url(iepngfix.htc); }</style><![endif]-->
+<script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
+<title>Welcome to Bloggers</title>
+<script type="text/javascript">
+	$(function() {
+		$("#tfq2b").click(function() {
+			if ($("#tfq2b").val() == "Search our website") {
+				$("#tfq2b").val("");
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<div ng-controller="WelcomeController" id="container_wrapper1">
+		<div id="container_wrapper2">
+			<div id="container">
+				<div id="header">
+					<div id="logo"></div>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a ng-click="Home()" ng-show="homeDisplay">Home</a></li>
+						<li><a ng-click="Create()">New</a></li>
+						<li><a ng-click="About()">About</a></li>
+						<li><a ng-click="Contact()">Contact</a></li>
+						<li><a ng-click="Logout()">Logout</a></li>
+					</ul>
+				</div>
+				<div id="content">
+					<div id="left_column">
+						<div class="postbody" id="templates" ng-repeat="t in titles" ng-hide="!(!!t.postTitle && !!t.postAbout || !!t.comment )">
+							<div>
+								<h1>
+									<a id="Content" ng-click="Blog(t)">{{t.postTitle}}</a>
+								</h1>
+								</br>
+							</div>
+							<p>{{t.postAbout}}</p>
+							<div id="section">
+								<ul>
+									<li class="deleteTitle" ng-click="Delete(t)">Delete</li>
+									<li class="postDate">{{t.postDate}}</li>
+									<li class="postDateA">{{t.postEmail}}</li>
+									<li class="comment">Comments({{t.count}})</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="right_column">
+						<div class="postbody">
+							<form id="tfnewsearch">
+								<input type="text" id="tfq2b" class="tftextinput2" name="q"
+									size="21" maxlength="120" value="Search our website" ng-model="field.title"> 
+									<input type="submit" value=">" class="tfbutton2" ng-click="Search(field)">
+							</form>
+						</div>
+						<div class="tfclear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div id="bottom"></div>
+			<div id="footer">Copyright © 2016 Blogger's Center | Designed
+				by Sindhu and Shruthi</div>
+		</div>
+	</div>
+	</div>
+</html>

@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Georgia, serif;
+    font-weight:400;
+}
+body {
+	background: #c3b595 url(images/content_bg.jpg) no-repeat;
+	font-family: Georgia, serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#tabs ul {
+	list-style-type: none;
+	width: 360px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#tabs ul li {
+	display: inline;
+}
+
+#tabs ul li {
+	float: left;
+	width: 180px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #dfd7c6;
+	color: #FFF;
+	-webkit-transition: background 0.3s;
+}
+
+#tabs ul li#loginbutton {
+	background: #c3b595;
+}
+
+#tabs ul li:hover {
+	cursor: pointer;
+}
+
+#wrapper {
+	margin: 0px auto;
+	width: 360px;
+	height: 310px;
+	outline: none;
+	background: #604a40;
+	box-shadow: 0px 0px 10px #6D6D6D;
+	margin-top: -13.5px;
+}
+
+#reg-wrapper {
+	display: none;
+}
+
+#login-text, #login-pass {
+	outline: none;
+	width: 296px;
+	padding: 10px;
+	font-family: Georgia, serif;
+	color: #7BA31C;
+	margin-left: 20px;
+}
+
+#login-text {
+	margin-top: 15px;
+}
+
+#login-pass {
+	margin-top: 10px;
+}
+
+#signup-text, #signup-pass, #username-text {
+	outline: none;
+	width: 296px;
+	padding: 10px;
+	font-family: Georgia, serif;
+	color: #7BA31C;
+	margin-left: 20px;
+}
+
+#username-text
+{
+	margin-top: 15px;
+}
+
+#signup-text {
+	margin-top: 15px;
+}
+
+#signup-pass {
+	margin-top: 10px;
+}
+
+
+#info {
+	width: 360px;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #c3b595;
+	font-size: 13px;
+}
+
+
+#infoReg {
+	width: 360px;
+	margin-left: 20px;
+	margin-top: -18px;
+	color: #c3b595;
+	font-size: 13px;
+}
+
+
+#loginError {
+	width: 360px;
+	margin-left: 20px;
+	margin-top: -15px;
+	color: #ff6666;
+	font-size: 13px;
+}
+
+#login-button {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: #c3b595;
+	color: #FFF;
+	border-radius: 5px;
+	font-family: Georgia, serif;
+	margin: 20px;
+	-webkit-transition: background 0.3s;
+}
+
+#login-button:hover {
+	cursor: pointer;
+	background: #dfd7c6;
+}
+
+#login-button:active {
+	background: #dfd7c6;
+}
+
+#Submit-button {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: #ffffff;
+	color: #191919;
+	border-radius: 5px;
+	font-family: Georgia, serif;
+	margin: 20px;
+	-webkit-transition: background 0.3s;
+}
+
+#Submit-button:hover {
+	cursor: pointer;
+	background: #008040;
+}
+
+#Submit-button:active {
+	background: #008040;
+}
+
+#signup-button {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: #c3b595;
+	color: #FFF;
+	border-radius: 5px;
+	font-family: Georgia, serif;
+	margin: 20px;
+	-webkit-transition: background 0.3s;
+}
+
+#signup-button:hover {
+	cursor: pointer;
+	background: #dfd7c6;
+}
+
+#signup-button:active {
+	background: #dfd7c6;
+}
