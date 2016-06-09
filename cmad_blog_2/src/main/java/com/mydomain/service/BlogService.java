@@ -70,7 +70,7 @@ Blogdao dao = new Blogdao();
 		System.out.println("Inside Search  : "+param+ " \n" );
 		return (dao.blogSearchStr(param));
 	}
-	/*
+	
 	@DELETE
 	@Secured
 	@Path("delete")
@@ -90,5 +90,5 @@ Blogdao dao = new Blogdao();
 
 		return true;
 	}
-	*/
+	
 }
