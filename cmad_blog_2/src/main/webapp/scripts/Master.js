@@ -226,7 +226,7 @@
 			$scope.value = value;
 			console.log("delete function");
 			console.log($scope.value.id);
-			var formGet = $http.delete('blog/page/delete?id='+ $scope.value.id)
+			var formGet = $http.delete('blog/page/delete?id='+ 4)
 			   .then(
 				       function(response){
 				         console.log("success");
