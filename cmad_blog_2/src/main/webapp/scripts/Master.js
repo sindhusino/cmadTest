@@ -227,7 +227,7 @@
 			console.log("delete function");
 			console.log($scope.value.id);
 			$http.defaults.headers.common['Authorization'] = 'Bearer ' + $scope.token.tokenValue;
-			var formGet = $http.delete('blog/page/delete?id='+ 4)
+			var formGet = $http.delete('blog/page/delete?id='+ $scope.value.id)
 			   .then(
 				       function(response){
 				         console.log("success");
